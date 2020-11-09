@@ -1,6 +1,18 @@
 # learn-ansible-by-doing
 - Chapter 2: Installtion and Configuration
     - lab 1: Deploying ansible
+      - 1. login to Control Host server with ssh.
+        -  ssh cloud_user@control-server-ip-address
+        -  sudo yum install epel-release
+        -  sudo yum install ansible
+     - 2. Create an Ansible Useri on the control node.
+        - sudo useradd ansible
+     - 3. Connect to the workstation node
+       -  ssh workstation
+     - 4. Add ansible user to workstation and set ansible password.
+       - sudo useradd ansible
+       - sudo passwd ansible
+       - logout
     - lab 2: Getting started with ansible
     - lab 3: Ad-Hoc Ansible Commands
     - lab 4: Working with Ansible Inventories
