@@ -16,10 +16,11 @@
     - Log in to the workstation host as cloud_user. 
     - ssh cloud_user@workstation
     - sudo visudo: add below root
-    - ansible       ALL=(ALL)       NOPASSWD: ALL
+    ![](./images/visudo.png)
     - logout
     6. Create simple inventory
     - lab 2: Getting started with ansible
+    - 
     - lab 3: Ad-Hoc Ansible Commands
     - lab 4: Working with Ansible Inventories
 Chapter 3: Plays and Playbooks
