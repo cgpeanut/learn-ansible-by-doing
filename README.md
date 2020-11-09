@@ -20,9 +20,32 @@
     - ansible   ALL=(ALL)   NOPASSWD: ALL
     - logout
     6. Create simple inventory
+    - create a simple inventory, /home/ansible/inventory, consistng of only the workstation host.
+    - On the control host, as the ansible user, run the following commands:
+    - vim /home/ansible/inventory
+    - add the test "workstation" to the file and save using wq! in vim 
+    7. Write an Ansible Playbook
+    - we need to write an Ansible playbook in /home/ansible/git-setup.yml on the control node that installs git on wrokstation, then executes th playbook. 
+  -  On the control hosts 
+
     - lab 2: Getting started with ansible
     - lab 3: Ad-Hoc Ansible Commands
     - lab 4: Working with Ansible Inventories
+
+### Additional Resources
+Install Ansible on the control host.
+    - sudo yum install epel-release
+    - sudo yum install ansible
+Create an 'ansible' user on both the control host and workstation host being sure to set password.
+    - On each host, run the noted commands below. Make sure you set a password. Assuming you are cloud_user
+    - sudo useradd ansible
+    - sudo passwd ansible
+Configure a pre-shared key for Ansible that allows the user to log in from 'control' to 'workstation' without password. 
+    - sudo -i -u ansible 
+    - ssh-keygen 
+    - ssh-copy-id workstation
+    - logout
+    - 
 Chapter 3: Plays and Playbooks
     - lab 1: Ansible Playbooks: The Basics
     - lab 2: Ansible Playbooks: Error Handling
