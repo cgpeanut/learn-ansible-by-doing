@@ -14,7 +14,7 @@
     - sudo passwd ansible
     - logout
     - 5. Configure Ansible User on the Workstation Host so sudo works without password.
-    - Log in to the workstation host as cloud_user. 
+    - Log in to the workstation host as cloud_user.
     - ssh cloud_user@workstation
     - sudo visudo: add below root
     - ansible   ALL=(ALL)   NOPASSWD: ALL
