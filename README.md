@@ -29,7 +29,7 @@
     - vim /home/ansible/git-setup-yml
     - add the following test to the file.
 
-![alt text](https://github.com/cgpeanut/learn-ansible-by-doing/Images/git-setup.png?raw=true)
+![alt text](https://github.com/cgpeanut/learn-ansible-by-doing/git-setup.png?raw=true)
 
     - run the playbook:
     - ansible-playbook -i /home/ansible/inventory /home/ansible/git-setup.yml
