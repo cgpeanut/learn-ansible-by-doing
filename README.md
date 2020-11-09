@@ -20,7 +20,7 @@
     - logout
     6. Create simple inventory
     - lab 2: Getting started with ansible
-    - 
+    ![visudo](https://prnt.sc/vgceqx)
     - lab 3: Ad-Hoc Ansible Commands
     - lab 4: Working with Ansible Inventories
 Chapter 3: Plays and Playbooks
