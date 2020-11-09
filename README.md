@@ -27,14 +27,15 @@
     7. Write an Ansible Playbook
     - we need to write an Ansible playbook in /home/ansible/git-setup.yml on the control node.
     - vim /home/ansible/git-setup-yml
-    - add the following test to the file
-![alt text](https://github.com/cgpeanut/learn-ansible-by-doing/Images/git-images.jpg?raw=true)
+    - add the following test to the file.
+
+![alt text](https://github.com/cgpeanut/learn-ansible-by-doing/Images/git-setup.png?raw=true)
+
     - run the playbook:
     - ansible-playbook -i /home/ansible/inventory /home/ansible/git-setup.yml
     - Verify that the playbook ran successfully:
     - ssh workstation
     - which git
-    
     - lab 2: Getting started with ansible
     - lab 3: Ad-Hoc Ansible Commands
     - lab 4: Working with Ansible Inventories
