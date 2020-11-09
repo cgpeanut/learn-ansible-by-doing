@@ -1,5 +1,5 @@
 ## Chapter 2: Installtion and Configuration
-- lab 1: Deploying ansible
+    - lab 1: Deploying ansible
     - 1. login to Control Host server with ssh.
     - ssh cloud_user@control-server-ip-address
     - sudo yum install epel-release
