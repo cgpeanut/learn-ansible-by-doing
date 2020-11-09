@@ -29,6 +29,8 @@
     - vim /home/ansible/git-setup-yml
     - add the following test to the file
     ![alt text](git-setup.png)
+    <h1><center>gitr-setup</center></h1>
+    <center><img src="Images\git-setup.png"></center>
     - lab 2: Getting started with ansible
     - lab 3: Ad-Hoc Ansible Commands
     - lab 4: Working with Ansible Inventories
