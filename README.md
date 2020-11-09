@@ -17,8 +17,7 @@
     - Log in to the workstation host as cloud_user. 
     - ssh cloud_user@workstation
     - sudo visudo: add below root
-    ![visudo](https://prnt.sc/vgceqx)
-
+    - ansible   ALL=(ALL)   NOPASSWD: ALL
     - logout
     6. Create simple inventory
     - lab 2: Getting started with ansible
