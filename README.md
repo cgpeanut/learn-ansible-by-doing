@@ -1,6 +1,4 @@
 # learn ansible by doing
-    <h1><center>git-setup</center></h1>
-    <center><img src="Images\git-setup.png"></center
 ### Chapter 2: Installtion and Configuration
     - lab 1: Deploying ansible
     1. login to Control Host server with ssh.
@@ -30,8 +28,13 @@
     - we need to write an Ansible playbook in /home/ansible/git-setup.yml on the control node.
     - vim /home/ansible/git-setup-yml
     - add the following test to the file
-    <h1><center>git-setup</center></h1>
-    <center><img src="Images\git-setup.png"></center>
+![alt text](https://github.com/cgpeanut/learn-ansible-by-doing/Images/git-images.jpg?raw=true)
+    - run the playbook:
+    - ansible-playbook -i /home/ansible/inventory /home/ansible/git-setup.yml
+    - Verify that the playbook ran successfully:
+    - ssh workstation
+    - which git
+    
     - lab 2: Getting started with ansible
     - lab 3: Ad-Hoc Ansible Commands
     - lab 4: Working with Ansible Inventories
