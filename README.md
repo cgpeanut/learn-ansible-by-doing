@@ -28,7 +28,7 @@
     - we need to write an Ansible playbook in /home/ansible/git-setup.yml on the control node.
     - vim /home/ansible/git-setup-yml
     - add the following test to the file 
-    ![alt text](file://Images/git-setup.png)
+    ![alt text](file://git-setup.png)
     - lab 2: Getting started with ansible
     - lab 3: Ad-Hoc Ansible Commands
     - lab 4: Working with Ansible Inventories
