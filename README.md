@@ -41,11 +41,11 @@ Create an 'ansible' user on both the control host and workstation host being sur
     - sudo useradd ansible
     - sudo passwd ansible
 Configure a pre-shared key for Ansible that allows the user to log in from 'control' to 'workstation' without password. 
-    - sudo -i -u ansible 
-    - ssh-keygen 
-    - ssh-copy-id workstation
+    - sudo -i -u ansible (provide cloud_user a sudo password)
+    - ssh-keygen (accept defaults)
+    - ssh-copy-id workstation (provide ansible user a password)
     - logout
-    - 
+
 Chapter 3: Plays and Playbooks
     - lab 1: Ansible Playbooks: The Basics
     - lab 2: Ansible Playbooks: Error Handling
