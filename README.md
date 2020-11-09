@@ -13,6 +13,14 @@
        - sudo useradd ansible
        - sudo passwd ansible
        - logout
+     - 5. Configure Ansible User on the Workstation Host so sudo works without password.
+     - Log in to the workstation host as cloud_user. 
+        - ssh cloud_user@workstation
+        - sudo visudo: add below root
+        - ansible       ALL=(ALL)       NOPASSWD: ALL
+        - logout
+     - 6. Create simple inventory
+     -  
     - lab 2: Getting started with ansible
     - lab 3: Ad-Hoc Ansible Commands
     - lab 4: Working with Ansible Inventories
