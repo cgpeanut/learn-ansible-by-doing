@@ -23,10 +23,12 @@
     - create a simple inventory, /home/ansible/inventory, consistng of only the workstation host.
     - On the control host, as the ansible user, run the following commands:
     - vim /home/ansible/inventory
-    - add the test "workstation" to the file and save using wq! in vim 
+    - add the test "workstation" to the file and save using wq! in vim
     7. Write an Ansible Playbook
-    - we need to write an Ansible playbook in /home/ansible/git-setup.yml on the control node that installs git on wrokstation, then executes the playbook.  On the control hosts
-
+    - we need to write an Ansible playbook in /home/ansible/git-setup.yml on the control node.
+    - vim /home/ansible/git-setup-yml
+    - add the following test to the file 
+    ![image](files/Users/audiophile/code/learn-ansible-by-doing/images/git-setup.png)
     - lab 2: Getting started with ansible
     - lab 3: Ad-Hoc Ansible Commands
     - lab 4: Working with Ansible Inventories
@@ -54,7 +56,7 @@ Chapter 3: Plays and Playbooks
     - lab 6: Advanced Features in Ansible Playbooks
 Chapter 4: Roles
     - lab 1: Working with Ansible Roles
-Chapter 5: Working With Files 
+Chapter 5: Working With Files
     - lab 1: File Manipulation with Ansible
 Chapter 6: Ansible Vault
     - lab 1: Working with Condfidential Data in Ansible
