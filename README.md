@@ -1,4 +1,6 @@
-## Chapter 2: Installtion and Configuration
+# learn ansible by doing
+### Chapter 2: Installtion and Configuration
+![visudo](https://prnt.sc/vgceqx
     - lab 1: Deploying ansible
     - 1. login to Control Host server with ssh.
     - ssh cloud_user@control-server-ip-address
