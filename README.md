@@ -1,5 +1,6 @@
 # learn ansible by doing
 ### Chapter 2: Installtion and Configuration
+Chapter 2:
     - lab 1: Deploying ansible
     1. login to Control Host server with ssh.
     - ssh cloud_user@control-server-ip-address
@@ -38,15 +39,15 @@
     - lab 3: Ad-Hoc Ansible Commands
     - lab 4: Working with Ansible Inventories
 
-### Additional Resources
-Install Ansible on the control host.
+# Additional Resources
+    1. Install Ansible on the control host.
     - sudo yum install epel-release
     - sudo yum install ansible
-Create an 'ansible' user on both the control host and workstation host being sure to set password.
+    2. Create an 'ansible' user on both the control host and workstation host being sure to set password.
     - On each host, run the noted commands below. Make sure you set a password. Assuming you are cloud_user
     - sudo useradd ansible
     - sudo passwd ansible
-Configure a pre-shared key for Ansible that allows the user to log in from 'control' to 'workstation' without password. 
+    3. Configure a pre-shared key for Ansible that allows the user to log in from 'control' to 'workstation' without password. 
     - sudo -i -u ansible (provide cloud_user a sudo password)
     - ssh-keygen (accept defaults)
     - ssh-copy-id workstation (provide ansible user a password)
