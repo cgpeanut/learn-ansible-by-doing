@@ -29,7 +29,9 @@ Chapter 2:
     - we need to write an Ansible playbook in /home/ansible/git-setup.yml on the control node.
     - vim /home/ansible/git-setup-yml
     - add the following test to the file.
-![git-setup.yml](https://github.com/cgpeanut/learn-ansible-by-doing/blob/master/git-setup.png?raw=true)
+    
+     ![git-setup.yml](https://github.com/cgpeanut/learn-ansible-by-doing/blob/master/git-setup.png?raw=true)
+
     - run the playbook:
     - ansible-playbook -i /home/ansible/inventory /home/ansible/git-setup.yml
     - Verify that the playbook ran successfully:
