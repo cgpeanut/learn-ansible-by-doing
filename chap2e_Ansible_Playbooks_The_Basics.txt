@@ -1,4 +1,7 @@
 Ansible Playbooks: The Basics
+1. create ansible playbook
+2. execute/run ansible playbook
+3. know common ansible modules service, yum and get url modules
 
 The Scenario
 Our company has been increasing the deployment of small brochure-style websites for clients. 
@@ -123,5 +126,26 @@ Using a text editor such as vim, edit /home/ansible/web.yml to contain the follo
 after the "retrieve website from repo" task: - name: install website unarchive: remote_src=yes 
 src=/tmp/website.tgz dest=/var/www/html/
 
-* Verify the Work by Executing the Playbook Using the Inventory
-ansible-playbook -i /home/ansible/inventory /home/ansible/web.yml
+* Verify the Work by Executing the Playbook Using the Inventor
+ansible-playbook -i /home/ansible/inventory /home/ansible/web.ymly
+
+
+[ansible@control1 ~]$ more web.yml
+---
+- hosts: web
+  become: yes
+  tasks:
+    - name: install httpd
+      yum: name=httpd state=latest
+    - name: start and enable httpd
+      service: name=httpd state=started enabled=yes
+    - name: retrieve website from repo
+      get_url: url=http://repo.example.com/website.tgz dest=/tmp/website.tgz
+    - name: install website
+      unarchive: remote_src=yes src=/tmp/website.tgz dest=/var/www/html/
+
+
+[ansible@control1 ~]$ more inventory
+[web]
+node1
+node2
