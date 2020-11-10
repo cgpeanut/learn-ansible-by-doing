@@ -53,6 +53,7 @@
 
 # Chapter 3: Plays and Playbooks
     - lab 1: Ansible Playbooks: The Basics
+
     - lab 2: Ansible Playbooks: Error Handling
     - lab 3: Working with Ansible Templates, Variables, and facts
     - lab 4: Writing Your First Ansible Playbook
