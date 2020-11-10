@@ -29,9 +29,7 @@ Chapter 2:
     - we need to write an Ansible playbook in /home/ansible/git-setup.yml on the control node.
     - vim /home/ansible/git-setup-yml
     - add the following test to the file.
-    
      ![git-setup.yml](https://github.com/cgpeanut/learn-ansible-by-doing/blob/master/git-setup.png?raw=true)
-
     - run the playbook:
     - ansible-playbook -i /home/ansible/inventory /home/ansible/git-setup.yml
     - Verify that the playbook ran successfully:
@@ -49,7 +47,7 @@ Chapter 2:
     - On each host, run the noted commands below. Make sure you set a password. Assuming you are cloud_user
     - sudo useradd ansible
     - sudo passwd ansible
-    3. Configure a pre-shared key for Ansible that allows the user to log in from 'control' to 'workstation' without password. 
+    3. Configure a pre-shared key for Ansible that allows the user to log in from 'control' to 'workstation' without password.
     - sudo -i -u ansible (provide cloud_user a sudo password)
     - ssh-keygen (accept defaults)
     - ssh-copy-id workstation (provide ansible user a password)
